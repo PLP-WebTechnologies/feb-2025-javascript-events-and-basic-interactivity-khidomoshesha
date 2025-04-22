@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Styled Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="main-header">
+        <h1><i>Unlocking the Magic of CSS!</i></h1>
+    </header>
+
+    <nav id="main-nav">
+        <a href="#about">The Art of Styling</a>
+        <a href="#services">Our Creative Services</a>
+        <button id="themeToggleButton">Toggle Theme</button>
+    </nav>
+
+    <div class="container">
+        <section class="section" id="about">
+            <h2>Dive into the World of CSS!</h2>
+            <img id="cssIllustration" src="https://th.bing.com/th/id/OIP.mCCUpUe8iadyobW0uBXxvQHaE7?rs=1&pid=ImgDetMain"
+                alt="Abstract CSS Illustration">
+            <p>Welcome to our colorful corner of the web, dedicated to the wonderful world of Cascading Style Sheets
+                (CSS)!</p>
+            <p>We believe that CSS is more than just styling; it's about bringing creativity and life to your web pages.
+                From the fundamental building blocks to crafting intricate layouts and engaging animations, we're here
+                to
+                guide you on your styling journey.</p>
+            <p>Our mission is to demystify CSS and make it accessible and enjoyable for everyone, regardless of their
+                experience level. We break down complex concepts into simple, understandable examples, ensuring you gain
+                a
+                solid foundation and the confidence to experiment and innovate.</p>
+            <p>Explore with us the power of selectors, the elegance of typography, the flexibility of layout techniques,
+                and
+                the magic of transitions and animations. Together, we'll transform plain HTML into visually stunning and
+                user-friendly web experiences.</p>
+            <p class="secret-text"><em>Double-click this text for a secret!</em></p>
+            <button id="changeTextBtn">Change Text Content</button>
+            <button id="changeStyleBtn">Change Background Color</button>
+            <button id="imageSwapBtn">Swap Image</button>
+        </section>
+
+        <section class="section" id="services">
+            <h2>Our Creative Services</h2>
+            <p>Here's a glimpse of how we can help you elevate your web presence with the power of CSS:</p>
+            <ul id="servicesList">
+                <li class="service-item"><strong>Vibrant CSS Basics Training:</strong> Learn the fundamentals with
+                    engaging
+                    and colorful examples.</li>
+                <li class="service-item"><strong>Interactive Responsive Design Workshops:</strong> Craft websites that
+                    look
+                    fantastic on any device.</li>
+                <li class="service-item"><strong>Bespoke Website Styling:</strong> Unique and eye-catching designs
+                    tailored
+                    to your brand.</li>
+                <li class="service-item"><strong>Expert CSS Debugging & Optimization:</strong> Ensure your styles are
+                    clean,
+                    efficient, and error-free.</li>
+                <li class="service-item"><strong>Dynamic Component Styling:</strong> Create interactive and visually
+                    appealing buttons, cards, forms, and more.</li>
+            </ul>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">What is CSS?</button>
+                    <div class="accordion-content">CSS stands for Cascading Style Sheets and is used to style the
+                        visual presentation of HTML documents.</div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Why learn CSS?</button>
+                    <div class="accordion-content">Learning CSS allows you to control the layout, colors, fonts, and
+                        overall appearance of your websites, making them more engaging and user-friendly.</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="form-validation">
+            <h2>Join Our Styling Community!</h2>
+            <form id="styleCommunityForm">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                    <p class="error-message" id="nameError"></p>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <p class="error-message" id="emailError"></p>
+                </div>
+                <div>
+                    <label for="password">Password (min 8 characters):</label>
+                    <input type="password" id="password" minlength="8" required>
+                    <p class="error-message" id="passwordError"></p>
+                </div>
+                <button type="submit">Sign Up</button>
+                <p id="formSubmitMessage"></p>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Colorful Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

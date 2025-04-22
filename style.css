@@ -1,0 +1,331 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* For theme toggle */
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+#main-header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+#main-header h1 {
+    margin: 0;
+}
+
+
+#main-nav {
+    background-color: #444;
+    padding: 0.5em 0;
+    display: flex;
+    justify-content: center;
+}
+
+#main-nav a,
+#main-nav button {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: inherit;
+    transition: background-color 0.3s ease;
+}
+
+#main-nav a:hover,
+#main-nav button:hover {
+    background-color: #555;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.section {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* For theme toggle */
+}
+
+.dark-theme .section {
+    background-color: #222;
+    color: #eee;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.alt-background {
+    background-color: rgb(0, 208, 255) !important;
+    color: #333 !important;
+}
+
+.alt-background h2 {
+    color: #d2691e !important;
+    /* Chocolate */
+}
+
+.alt-background p {
+    color: #8b4513 !important;
+    /* Saddle Brown */
+}
+
+/* Add a temporary transition class for visual feedback */
+.background-transition {
+    transition: background-color 0.5s ease-in-out;
+}
+
+.section h2 {
+    color: #333;
+    transition: color 0.3s ease;
+    /* For theme toggle */
+}
+
+.dark-theme .section h2 {
+    color: #fff;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* For hover effect */
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.section ul li {
+    padding: 0.5em 0;
+    border-bottom: 1px solid #eee;
+    transition: border-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+    /* For theme toggle */
+}
+
+.dark-theme .section ul li {
+    border-bottom-color: #555;
+}
+
+.section ul li:last-child {
+    border-bottom: none;
+}
+
+.section button {
+    background-color: #5cb85c;
+    /* Green */
+    color: white;
+    border: none;
+    padding: 0.8em 1.5em;
+    margin: 0.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.section button:hover {
+    background-color: #4cae4c;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: static;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* For theme toggle */
+}
+
+.dark-theme footer {
+    background-color: #222;
+    color: #ddd;
+}
+
+/* Accordion Styling */
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+    /* For theme toggle */
+}
+
+.dark-theme .accordion-item {
+    border-color: #555;
+}
+
+.accordion-header {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px 15px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* For theme toggle */
+}
+
+.dark-theme .accordion-header {
+    background-color: #444;
+    color: #eee;
+}
+
+.accordion-header:hover {
+    background-color: #e0e0e0;
+}
+
+.dark-theme .accordion-header:hover {
+    background-color: #555;
+}
+
+.accordion-header.active {
+    background-color: #ddd;
+    color: #000;
+}
+
+.dark-theme .accordion-header.active {
+    background-color: #555;
+    color: #fff;
+}
+
+.accordion-content {
+    padding: 10px 15px;
+    background-color: white;
+    color: #333;
+    display: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* For theme toggle */
+}
+
+.dark-theme .accordion-content {
+    background-color: #222;
+    color: #eee;
+}
+
+/* Form Validation Styling */
+#form-validation {
+    text-align: left;
+}
+
+#styleCommunityForm div {
+    margin-bottom: 10px;
+}
+
+#styleCommunityForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#styleCommunityForm input[type="text"],
+#styleCommunityForm input[type="email"],
+#styleCommunityForm input[type="password"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    /* For theme toggle */
+}
+
+.dark-theme #styleCommunityForm input[type="text"],
+.dark-theme #styleCommunityForm input[type="email"],
+.dark-theme #styleCommunityForm input[type="password"] {
+    background-color: #333;
+    color: #eee;
+    border-color: #555;
+}
+
+#styleCommunityForm .error-message {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+#styleCommunityForm button[type="submit"] {
+    background-color: #007bff;
+    /* Blue */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#styleCommunityForm button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#formSubmitMessage {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Dynamic Content Styling */
+.dynamic-text {
+    background-color: rgb(220, 220, 190);
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.highlighted {
+    background-color: lightgreen !important;
+    transition: background-color 1s ease-in-out;
+}
+
+.secret-activated {
+    background-color: rgb(0, 179, 255) !important;
+    color: black !important;
+    font-weight: bold;
+}
+
+.long-press-activated {
+    color: red !important;
+    font-style: italic;
+}
+
+/* Responsive Design Adjustments (No Changes Needed - Already Handles Layout) */
+@media (max-width: 600px) {
+    #main-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main
